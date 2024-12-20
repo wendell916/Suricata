@@ -6,13 +6,13 @@ Suricata is an open-source network Intrusion Detection System (IDS) and Intrusio
 
 # Features of Suricata
 
-Intrusion Detection and Prevention (IDS/IPS): Suricata detects and prevents known threats by using signatures, which are pre-defined rules.
+* Intrusion Detection and Prevention (IDS/IPS): Suricata detects and prevents known threats by using signatures, which are pre-defined rules.
 
-Network Security Monitoring: Suricata provides detailed metadata about network flows, including flow duration, packet counts, and byte counts.
+* Network Security Monitoring: Suricata provides detailed metadata about network flows, including flow duration, packet counts, and byte counts.
 
-Deep Packet Inspection (DPI): It analyzes network traffic in detail, including the application layer (e.g., HTTP, DNS, FTP, SMTP).
+* Deep Packet Inspection (DPI): It analyzes network traffic in detail, including the application layer (e.g., HTTP, DNS, FTP, SMTP).
 
-Protocol Detection and Logging: Suricata supports decoding and logging of protocols such as HTTP, TLS, FTP, and DNS.
+* Protocol Detection and Logging: Suricata supports decoding and logging of protocols such as HTTP, TLS, FTP, and DNS.
 
 # How Does Suricata Work?
 
@@ -34,15 +34,15 @@ To enhance threat detection and identify network anomalies, addressing the issue
 
 # Tools Used
 
-Ubuntu Server
+* Ubuntu Server
 
-VMware
+* VMware
 
 # Project Scope
 
-'*' This project provides a detailed guide on installing Suricata on an Ubuntu server, analyzing, monitoring, and generating alerts for investigation and remediation.
+* This project provides a detailed guide on installing Suricata on an Ubuntu server, analyzing, monitoring, and generating alerts for investigation and remediation.
 
-'*' Limitation: This project focuses only on the IDS functionality of Suricata. It uses an out-of-band network architecture that listens to traffic but cannot prevent attacks actively.
+* Limitation: This project focuses only on the IDS functionality of Suricata. It uses an out-of-band network architecture that listens to traffic but cannot prevent attacks actively.
 
 # Implementation Process
 
@@ -64,23 +64,33 @@ Project Setup:
 
 Install Ubuntu Server.
 
+
 Run the following commands in the ubuntu terminal:
+
 ``````
 sudo apt-get install software-properties-common
 ``````
 
+
 ``````
 sudo add-apt-repository ppa:oisf/suricata-stable
 ``````
+
+
 ``````
 sudo apt update
 ``````
+
 ``````
 sudo apt install suricata jq
 ``````
-Verify Suricata's status:
 
+Verify Suricata's status with the command 
+
+``````
 sudo systemctl status suricata
+
+``````
 
 Determine the interface and IP address of the server:
 
