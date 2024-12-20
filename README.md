@@ -68,13 +68,12 @@ Install Ubuntu Server.
 Run the following commands in the ubuntu terminal:
 
 ``````
-
 sudo apt-get install software-properties-common
 
 ``````
 
 
-``````
+`````
 
 sudo add-apt-repository ppa:oisf/suricata-stable
 
@@ -82,13 +81,11 @@ sudo add-apt-repository ppa:oisf/suricata-stable
 
 
 ``````
-
 sudo apt update
 
 ``````
 
 ``````
-
 sudo apt install suricata jq
 
 ``````
@@ -96,9 +93,7 @@ sudo apt install suricata jq
 Verify Suricata's status with the command 
 
 ``````
-
 sudo systemctl status suricata
-
 
 ``````
 
