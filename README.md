@@ -107,15 +107,21 @@ nano /etc/suricata/suricata.yaml
 Modify the following:
 
 Home_Net Section: Update the IP address of the local network.
+![image_2024-12-20_233314492](https://github.com/user-attachments/assets/0ac64c7e-dfa1-4c80-8a96-c77bf4826126)
 
 AF-Packet Section: Set the interface to the one used by your network.
+![image_2024-12-20_233508106](https://github.com/user-attachments/assets/56aa9896-58ed-4c5a-a5e2-a8bc87b39f0b)
 
-Update signatures:
+Update signatures: Suricata uses Signatures to trigger alerts so it's necessary to install those and keep them updated. Use the command
 
+````
 sudo suricata-update
+````
+````
 sudo systemctl restart suricata
+````
 
-Testing Suricata
+# Testing Suricata
 
 Perform an aggressive Nmap scan on the server running Suricata.
 
