@@ -68,10 +68,16 @@ Run the following commands in the ubuntu terminal:
 ``````
 sudo apt-get install software-properties-common
 ``````
-sudo add-apt-repository ppa:oisf/suricata-stable
-sudo apt update
-sudo apt install suricata jq
 
+``````
+sudo add-apt-repository ppa:oisf/suricata-stable
+``````
+``````
+sudo apt update
+``````
+``````
+sudo apt install suricata jq
+``````
 Verify Suricata's status:
 
 sudo systemctl status suricata
