@@ -1,10 +1,10 @@
-Suricata IDS
+# Suricata IDS
 
-What is Suricata?
+# What is Suricata?
 
 Suricata is an open-source network Intrusion Detection System (IDS) and Intrusion Prevention System (IPS), as well as a network monitoring tool. This documentation is based on version 7.0.8, which is the latest at the time of writing. Developed by the Open Information Security Foundation (OISF), Suricata uses pre-defined signatures to detect anomalies or threats within a network.
 
-Features of Suricata
+# Features of Suricata
 
 Intrusion Detection and Prevention (IDS/IPS): Suricata detects and prevents known threats by using signatures, which are pre-defined rules.
 
@@ -14,7 +14,7 @@ Deep Packet Inspection (DPI): It analyzes network traffic in detail, including t
 
 Protocol Detection and Logging: Suricata supports decoding and logging of protocols such as HTTP, TLS, FTP, and DNS.
 
-How Does Suricata Work?
+# How Does Suricata Work?
 
 Suricata listens to network traffic via a network interface card (NIC) configured in promiscuous mode.
 
@@ -24,29 +24,29 @@ If a match is found, an alert is generated.
 
 Logs are created containing metadata, protocol details, and addresses for deeper investigation.
 
-Problem Statement
+# Problem Statement
 
 Without a robust intrusion detection and prevention system like Suricata, network traffic remains vulnerable to threats that can progress unchecked. The lack of traffic analysis increases the risk of regulatory non-compliance, delayed incident response, incomplete forensic investigations, and reduced threat intelligence. Organizations become reactive and vulnerable to evolving cyber threats.
 
-Objective
+# Objective
 
 To enhance threat detection and identify network anomalies, addressing the issues highlighted in the problem statement.
 
-Tools Used
+# Tools Used
 
 Ubuntu Server
 
 VMware
 
-Project Scope
+# Project Scope
 
-This project provides a detailed guide on installing Suricata on an Ubuntu server, analyzing, monitoring, and generating alerts for investigation and remediation.
+*This project provides a detailed guide on installing Suricata on an Ubuntu server, analyzing, monitoring, and generating alerts for investigation and remediation.
 
-Limitation: This project focuses only on the IDS functionality of Suricata. It uses an out-of-band network architecture that listens to traffic but cannot prevent attacks actively.
+*Limitation: This project focuses only on the IDS functionality of Suricata. It uses an out-of-band network architecture that listens to traffic but cannot prevent attacks actively.
 
-Implementation Process
+# Implementation Process
 
-Requirements
+# Requirements
 
 For optimal performance, Suricata recommends:
 
@@ -60,13 +60,14 @@ Project Setup:
 
 2 CPU cores
 
-Installation
+# Installation
 
 Install Ubuntu Server.
 
-Run the following commands in the terminal:
-
+Run the following commands in the ubuntu terminal:
+``````
 sudo apt-get install software-properties-common
+``````
 sudo add-apt-repository ppa:oisf/suricata-stable
 sudo apt update
 sudo apt install suricata jq
