@@ -85,8 +85,8 @@ Updates the local packages
 sudo apt install suricata jq
 ``````
 This command installs suricata and the jq tool that will be used to parse the logs into json format 
-Verify Suricata's status with the command 
 
+Verify Suricata's status with the command 
 ``````
 sudo systemctl status suricata
 ``````
