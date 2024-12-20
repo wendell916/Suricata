@@ -16,13 +16,13 @@ Suricata is an open-source network Intrusion Detection System (IDS) and Intrusio
 
 # How Does Suricata Work?
 
-Suricata listens to network traffic via a network interface card (NIC) configured in promiscuous mode.
+* Suricata listens to network traffic via a network interface card (NIC) configured in promiscuous mode.
 
-The captured traffic is analyzed against known or configured signatures.
+* The captured traffic is then analyzed against known or configured signatures.
 
-If a match is found, an alert is generated.
+* If a match is found, an alert is generated.
 
-Logs are created containing metadata, protocol details, and addresses for deeper investigation.
+* Logs are created containing metadata, protocol details, and addresses for deeper investigation.
 
 # Problem Statement
 
@@ -69,32 +69,26 @@ Run the following commands in the ubuntu terminal:
 
 ``````
 sudo apt-get install software-properties-common
-
 ``````
 
 
 `````
-
 sudo add-apt-repository ppa:oisf/suricata-stable
-
 ``````
 
 
 ``````
 sudo apt update
-
 ``````
 
 ``````
 sudo apt install suricata jq
-
 ``````
 
 Verify Suricata's status with the command 
 
 ``````
 sudo systemctl status suricata
-
 ``````
 
 Determine the interface and IP address of the server:
