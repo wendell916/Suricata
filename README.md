@@ -54,7 +54,7 @@ At least 2 CPU cores
 
 4 GB of RAM
 
-Project Setup:
+# Project Setup:
 
 7 GB of RAM
 
@@ -123,22 +123,22 @@ tail -f /var/log/suricata/fast.log
 
 Alerts generated from the Nmap scan can be found in /var/log/suricata/fast.log.
 
-Challenges
+# Challenges
 
 Due to a NIC that doesn’t support promiscuous mode, I was unable to monitor all traffic on the network, except for the Ubuntu server hosting Suricata.
 
-Results
+# Results
 
-Learned how Suricata works.
+* Learned how Suricata works.
 
-Understood how rules generate alerts.
+* Understood how rules generate alerts.
 
-Successfully installed and deployed Suricata.
+* Successfully installed and deployed Suricata.
 
-References
+# References
 
-Suricata Documentation
+https://docs.suricata.io/en/latest/
 
-Future Enhancements
+# Future Enhancements
 
 Integration with Wazuh (Open-source SIEM): Display alerts directly on a dashboard in real-time, eliminating the need for manual checks.
