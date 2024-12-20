@@ -40,9 +40,9 @@ VMware
 
 # Project Scope
 
-*This project provides a detailed guide on installing Suricata on an Ubuntu server, analyzing, monitoring, and generating alerts for investigation and remediation.
+'*' This project provides a detailed guide on installing Suricata on an Ubuntu server, analyzing, monitoring, and generating alerts for investigation and remediation.
 
-*Limitation: This project focuses only on the IDS functionality of Suricata. It uses an out-of-band network architecture that listens to traffic but cannot prevent attacks actively.
+'*' Limitation: This project focuses only on the IDS functionality of Suricata. It uses an out-of-band network architecture that listens to traffic but cannot prevent attacks actively.
 
 # Implementation Process
 
