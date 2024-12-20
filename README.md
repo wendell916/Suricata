@@ -70,28 +70,28 @@ Run the following commands in the ubuntu terminal:
 ``````
 sudo apt-get install software-properties-common
 ``````
-
+Installs software-properties-common
 
 `````
 sudo add-apt-repository ppa:oisf/suricata-stable
 ``````
-
+Adds a Personal Package Archive (PPA) to your debain-based linux system
 
 ``````
 sudo apt update
 ``````
-
+Updates the local packages
 ``````
 sudo apt install suricata jq
 ``````
-
+This command installs suricata and the jq tool that will be used to parse the logs into json format 
 Verify Suricata's status with the command 
 
 ``````
 sudo systemctl status suricata
 ``````
 
-Determine the interface and IP address of the server:
+Determine the interface and IP address of the server with the command,
 ``````
 ip a
 
