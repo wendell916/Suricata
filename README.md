@@ -90,6 +90,7 @@ Verify Suricata's status with the command
 ``````
 sudo systemctl status suricata
 ``````
+![image_2024-12-20_232437085](https://github.com/user-attachments/assets/7eead76e-2dce-495c-8fc1-156f1a181826)
 
 Determine the interface and IP address of the server with the command,
 ``````
