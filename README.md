@@ -94,7 +94,6 @@ sudo systemctl status suricata
 Determine the interface and IP address of the server with the command,
 ``````
 ip a
-
 ``````
 Configure Suricata:
 
