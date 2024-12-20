@@ -62,7 +62,7 @@ Project Setup:
 
 # Installation
 
-Install Ubuntu Server.
+1 Make sure to have an installed Ubuntu Server.
 
 
 Run the following commands in the ubuntu terminal:
@@ -92,9 +92,10 @@ sudo systemctl status suricata
 ``````
 
 Determine the interface and IP address of the server:
-
+``````
 ip a
 
+``````
 Configure Suricata:
 
 Use a preferred text editor (e.g., nano):
