@@ -96,6 +96,8 @@ Determine the interface and IP address of the server with the command,
 ``````
 ip a
 ``````
+![image_2024-12-20_233013534](https://github.com/user-attachments/assets/a1a4cbf1-1d9b-4af3-bd1e-ea66ec013e3d)
+
 Configure Suricata:
 
 Use a preferred text editor (e.g., nano):
