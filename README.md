@@ -112,22 +112,26 @@ Home_Net Section: Update the IP address of the local network.
 AF-Packet Section: Set the interface to the one used by your network.
 ![image_2024-12-20_233508106](https://github.com/user-attachments/assets/56aa9896-58ed-4c5a-a5e2-a8bc87b39f0b)
 
-Update signatures: Suricata uses Signatures to trigger alerts so it's necessary to install those and keep them updated. Use the command
+Update signatures: Suricata uses Signatures to trigger alerts so it's necessary to install those and keep them updated. 
 
 ````
 sudo suricata-update
 ````
+Restart suricata 
 ````
 sudo systemctl restart suricata
 ````
 
 # Testing Suricata
 
-Perform an aggressive Nmap scan on the server running Suricata.
+Performed a simple ping command on the server running Suricata.
+![image_2024-12-20_235344128](https://github.com/user-attachments/assets/d321cfcc-6c87-40ac-85b7-efea56cc9535)
 
 View alerts:
 
 tail -f /var/log/suricata/fast.log
+
+![image_2024-12-20_235530583](https://github.com/user-attachments/assets/7c1e4345-6ec4-4b49-987e-78e9c129f023)
 
 Alerts generated from the Nmap scan can be found in /var/log/suricata/fast.log.
 
