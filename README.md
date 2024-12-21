@@ -125,11 +125,12 @@ sudo systemctl restart suricata
 # Testing Suricata
 
 Performed a simple ping command on the server running Suricata.
-![image_2024-12-20_235344128](https://github.com/user-attachments/assets/d321cfcc-6c87-40ac-85b7-efea56cc9535)
+![image_2024-12-20_235809065](https://github.com/user-attachments/assets/063b7342-9735-4ee2-8e7c-2b470d0a1d4d)
 
 View alerts:
-
+````
 tail -f /var/log/suricata/fast.log
+````
 
 ![image_2024-12-20_235530583](https://github.com/user-attachments/assets/7c1e4345-6ec4-4b49-987e-78e9c129f023)
 
